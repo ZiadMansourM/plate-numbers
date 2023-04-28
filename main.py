@@ -1,14 +1,14 @@
 from fastapi import FastAPI, File, UploadFile
 from typing import Dict
 
-import plate_recognition
+from plate_recognition import recognize_plates
 
 app = FastAPI()
 
 @app.post("/predict")
 async def recognize_plate(file: UploadFile = File(...)) -> Dict[str, str]:
     content = await file.read()
-    plate_number = plate_recognition.recognize_plates(content)
+    plate_number = recognize_plates(content)
     return {"plate_number": plate_number}
 
 @app.get("/")
