@@ -1,4 +1,3 @@
-import cv2
 from matplotlib import pyplot as plt
 import numpy as np
 import imutils
@@ -8,6 +7,7 @@ import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 
 def recognize_plates(content):
+    import cv2
     nparr = np.frombuffer(content, np.uint8)
     img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
 

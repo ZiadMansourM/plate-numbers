@@ -5,7 +5,7 @@ import plate_recognition
 
 app = FastAPI()
 
-@app.post("/recognize_plate")
+@app.post("/predict")
 async def recognize_plate(file: UploadFile = File(...)) -> Dict[str, str]:
     content = await file.read()
     plate_number = plate_recognition.recognize_plates(content)
@@ -18,3 +18,8 @@ async def home():
 @app.get("/about")
 async def about():
     return {"message": "About page"}
+
+if __name__ == "__main__":
+    import uvicorn
+    import cv2
+    uvicorn.run(app, host="0.0.0.0", port=8000)
