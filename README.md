@@ -71,6 +71,6 @@ New release '22.04.2 LTS' available.
 Run 'do-release-upgrade' to upgrade to it.
 
 
-Last login: Fri Apr 28 23:42:58 2023 from 156.209.207.166
+Last login: Fri Apr 28 23:42:58 2023 from XXX.XXX.XXX.XXX
 ziadh@bigdata-computervision:~$ 
 ```
