@@ -1,5 +1,5 @@
 # Lecture assignment "Cloud Computing" Bigdata Course - [API](http://bigdata.centralindia.cloudapp.azure.com/)
-This is a dummy API hosted on Azure Virtual machines on a Standard_D2s_v3 instance. It sympolize an API that radars can consume by sending cars plates images and the return would be plate numbers.
+This is a dummy API hosted on Azure Virtual machines on a `Standard_D2s_v3` instance. It sympolize an API that radars can consume by sending cars plates images and the return would be plate numbers.
 
 
 ## Examples:
